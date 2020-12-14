@@ -21,5 +21,4 @@ RUN apk add --no-cache --virtual swift-build-dependencies \
     git clone --depth 1 https://github.com/apple/swift-corelibs-foundation.git /swift-corelibs-foundation &&\
     git clone --depth 1 https://github.com/apple/swift-corelibs-xctest.git /swift-corelibs-xctest &&\
     git clone --depth 1 https://github.com/apple/swift-llbuild.git /llbuild
-#RUN ./utils/build-toolchain be.0x01
 
