@@ -14,7 +14,7 @@ RUN apk add --no-cache --virtual swift-build-dependencies \
     ln -s /usr/bin/python3 /usr/bin/python &&\
     ln -s /opt/ninja /ninja &&\
     git clone --depth 1 --branch ${REVISION} https://github.com/apple/swift.git /swift &&\
-    git clone --depth 1 https://github.com/commonmark/cmark.git /cmark && mkdir -p /cmark/build && cd /cmark/build && cmake .. && make && make install &&\
+    git clone --depth 1 https://github.com/commonmark/cmark.git /cmark &&\
     git clone --depth 1 https://github.com/llvm/llvm-project.git /llvm-project &&\
     git clone --depth 1 https://github.com/unicode-org/icu.git /icu &&\
     git clone --depth 1 https://github.com/apple/swift-corelibs-libdispatch.git /swift-corelibs-libdispatch &&\
