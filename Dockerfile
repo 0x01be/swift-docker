@@ -8,6 +8,8 @@ RUN apk add --no-cache --virtual swift-build-dependencies \
     clang \
     cmake \
     bash \
+    zlib-dev \
+    libxml2-dev \
     python3 \
     py3-six \
     py3-psutil &&\
